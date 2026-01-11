@@ -134,7 +134,7 @@ def show_floating_status(count):
     """, unsafe_allow_html=True)
 
 # --- LAYOUT ---
-st.markdown("### 🧠 Real-time Market Sentiment Analysis")
+st.markdown("### Real-time MarketMind Analysis")
 
 col_map, col_news = st.columns([2, 1]) 
 
@@ -230,7 +230,7 @@ with col_news:
         else:
             bull_news = pd.DataFrame(); bear_news = pd.DataFrame()
 
-        tab_bull, tab_bear = st.tabs([f"🐂 Bullish ({len(bull_news)})", f"🐻 Bearish ({len(bear_news)})"])
+        tab_bull, tab_bear = st.tabs([f"📈 Bullish ({len(bull_news)})", f"📉 Bearish ({len(bear_news)})"])
         
         st.markdown("""<style>
         .news-card {background-color: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 12px; border: 1px solid #f0f2f6;}
@@ -257,7 +257,7 @@ with col_news:
 
                 st.markdown(f"""
                 <div class="news-card" style="border-left: 6px solid {color};">
-                    <div class="news-meta">{row.get('Source', 'Unknown')} • {date_str} • Score: <b>{score:.1f}</b></div>
+                    <div class="news-meta">{row.get('Source', 'Unknown')} • {date_str}</b></div>
                     <a href="{row.get('Link', '#')}" target="_blank" class="news-title">{row.get('Title', 'No Title')}</a>
                     <div style="margin-bottom:8px;">{tags_html}</div>
                     <div style="font-size:13px; color:#444;">{summary}</div>

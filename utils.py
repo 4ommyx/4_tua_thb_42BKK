@@ -15,7 +15,7 @@ def navbar():
         /* ปรับแต่งชื่อ App ใน Navbar */
         .nav-app-name {
             font-weight: 700;
-            font-size: 26px;  /* <--- ปรับให้ใหญ่ขึ้นตรงนี้ (เดิม 20px) */
+            font-size: 38px;  /* <--- ปรับให้ใหญ่ขึ้นตรงนี้ (เดิม 20px) */
             color: #333333;   /* <--- เปลี่ยนเป็นสีดำเข้ม (Black) */
             display: flex;
             align-items: center;
@@ -31,7 +31,7 @@ def navbar():
 
         with col_brand:
             # ใส่ชื่อ App
-            st.markdown('<div class="nav-app-name">🧠 AI Market Psychologist</div>', unsafe_allow_html=True)
+            st.markdown('<div class="nav-app-name">MarketMind</div>', unsafe_allow_html=True)
 
         with col1:
             st.page_link("Home.py", label="Dashboard", icon="🏠", use_container_width=True)

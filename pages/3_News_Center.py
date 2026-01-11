@@ -172,7 +172,7 @@ if not df_news.empty:
             # สร้าง HTML: เอา Original Content ขึ้นก่อน -> ตามด้วย AI Summary ด้านล่างสุด
             card_html = f"""
 <div class="news-card" style="border-left: 6px solid {color};">
-<div class="news-meta">{row['Source']} • {date_str} • Score: <b>{score:.1f}</b></div>
+<div class="news-meta">{row['Source']} • {date_str} </b></div>
 <a href="{row['Link']}" target="_blank" class="news-title">{row['Title']}</a>
 <div style="margin-bottom:5px;">{tags_html}</div>
 <div class="original-content">{original_text}</div>
