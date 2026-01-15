@@ -150,20 +150,39 @@ with col_map:
             latest_str = df_sector['Report_Date'].dt.strftime('%d %b %Y').iloc[0]
             st.caption(f"Data as of: {latest_str}")
 
+
+        MAIN_SECTORS = [
+            "Energy", 
+            "Basic Materials",           # GICS: Materials
+            "Industrials", 
+            "Consumer Cyclical",         # GICS: Consumer Discretionary
+            "Consumer Defensive",        # GICS: Consumer Staples
+            "Healthcare",                # GICS: Health Care
+            "Financials", 
+            "Technology",                # GICS: Information Technology
+            "Communication Services", 
+            "Utilities", 
+            "Real Estate"
+        ]
+
+ 
+        df_chart = df_sector[df_sector['Sector'].isin(MAIN_SECTORS)]
+        if df_chart.empty:
+            st.warning("No data found for the 11 main sectors. Please check sector spelling in your CSV.")
+            df_chart = df_sector
+
         fig = px.treemap(
-            df_sector, 
+            df_chart, 
             path=['Sector'], 
             values='News_Volume', 
             color='Final_AI_Score',
             color_continuous_scale=['#FF4B4B', '#FACA2B', '#09AB3B'], 
             range_color=[0, 10],
-            # Custom Data ต้องเรียงตามนี้: [Outlook, Volume, Score]
             custom_data=['Final_Outlook', 'News_Volume', 'Final_AI_Score'] 
         )
         
         fig.update_traces(
             textinfo="label+value", 
-            # แสดงค่าจาก customdata[2] คือ Final_AI_Score
             texttemplate="<span style='color:white; font-weight:bold;'>%{label}</span><br><span style='color:white; font-size:18px;'>%{customdata[2]:.2f}</span>",
             textposition="middle center",
             hovertemplate="<b>%{label}</b><br>Score: %{customdata[2]:.2f}/10<br>Vol: %{value}<br>Outlook: %{customdata[0]}<extra></extra>",
@@ -193,7 +212,7 @@ with col_map:
                     st.error(f"Cannot switch page. Please check file path. Error: {e}")
 
     else: 
-        st.error("Sector data not found. Please run the analyst script first or check 'sector_daily_history_7days.csv'.")
+        st.error("Sector data not found.")
 
 # --------------------------------------------------------
 # 📰 RIGHT COLUMN: NEWS FEED

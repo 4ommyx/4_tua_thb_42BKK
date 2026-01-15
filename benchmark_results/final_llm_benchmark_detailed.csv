@@ -1,0 +1,4 @@
+Model,Average_Score,CFA_Score(%),CFA_Detail,FPB_Score(%),FPB_Detail,GSM8K_Score(%),GSM8K_Detail
+gemma-3-12b-it,74.56,64.92,670/1032,80.00,776/970,78.77,1039/1319
+Qwen2.5-14B-Instruct,58.20,75.00,774/1032,81.34,789/970,18.27,241/1319
+Meta-Llama-3.1-8B-Instruct,52.69,57.07,589/1032,75.15,729/970,25.85,341/1319

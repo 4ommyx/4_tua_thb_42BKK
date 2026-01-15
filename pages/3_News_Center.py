@@ -162,7 +162,7 @@ if not df_news.empty:
             # เตรียม AI Summary (แต่ยังไม่ใส่)
             ai_summary_html = ""
             if row['Short_Ans'] and str(row['Short_Ans']).strip() != "":
-                ai_summary_html = f'<div class="ai-summary-box"><strong>🤖 AI Summary:</strong> {row["Short_Ans"]}</div>'
+                ai_summary_html = f'<div class="ai-summary-box"><strong>🤖 AI Summary :</strong> {row["Short_Ans"]}</div>'
 
             # เตรียมเนื้อหาข่าว (Original)
             original_text = row['Content']
