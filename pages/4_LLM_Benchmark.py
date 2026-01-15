@@ -48,7 +48,7 @@ df = load_benchmark_data()
 # ==========================================
 st.title("LLM Benchmark")
 st.markdown("""
-This dashboard evaluates the performance of selected Large Language Models (LLMs) across critical domains required for an **AI Market Psychologist**. 
+This dashboard evaluates the performance of selected Large Language Models (LLMs) across critical domains required for an **MarketMind**. 
 The benchmarks cover financial domain knowledge, market sentiment analysis, and logical reasoning capabilities.
 """)
 st.divider()
