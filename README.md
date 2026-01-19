@@ -1,4 +1,4 @@
-# 🧠 MarketMind: Hybrid LLM System for Economic Sentiment Analysis
+# MarketMind: Hybrid LLM System for Economic Sentiment Analysis
 
 ![Banner Image](https://i.ibb.co/HTwfMzSr/main-page.jpg)
 > **🏆 WINNER - 1ST PLACE AWARD (Prize: 10,000 THB)**
@@ -50,7 +50,6 @@ Our end-to-end pipeline consists of four main layers:
 4.  **Visualization Layer :**
     * Interactive Streamlit Dashboard.
     * Plotly-based visualizations (Treemaps, Gauge Charts).
-![LLM](https://i.ibb.co/5XJ8smNK/llm-b.jpg)
 ---
 
 ## Key Features
@@ -69,7 +68,7 @@ A transparent view of how each model performs against standard financial benchma
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technologies Used |
 | :--- | :--- |
@@ -91,7 +90,7 @@ To ensure reliability, we benchmarked our selected models against industry stand
 | **CFA Level 1** | Financial Knowledge | **Qwen-2.5** | **75.00%** |
 | **Financial PhraseBank** | Sentiment Accuracy | **Qwen-2.5** | **81.34%** |
 | **GSM8K** | Logic & Reasoning | **Gemma-3** | **78.77%** |
-
+![LLM](https://i.ibb.co/5XJ8smNK/llm-b.jpg)
 *Conclusion: No single model is perfect. Combining Qwen's financial knowledge with Gemma's logic yields the best results.*
 
 ---
@@ -109,7 +108,7 @@ To ensure reliability, we benchmarked our selected models against industry stand
 
 **Advisor:** Dr. Jirayu Petchhan
 
-* **Natthawut Chai-uam**
+* **Natthawut Chayauam**
 * **Peerapol Srisawat**
 * **Nawaporn Kiatveerachon**
 * **Teerawisit Jinnarat**
