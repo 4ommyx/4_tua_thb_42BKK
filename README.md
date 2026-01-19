@@ -1,6 +1,7 @@
 # 🧠 MarketMind: Hybrid LLM System for Economic Sentiment Analysis
 
-![Banner Image](https://placehold.co/1200x400/101820/FFD700?text=MarketMind+AI+Investment+Platform)
+![Banner Image](![Uploading image.png…]()
+)
 > **🏆 WINNER - 1ST PLACE AWARD (Prize: 10,000 THB)**
 > *High-Competency AI Workforce Development Project (PMU-B) x 42 Bangkok*
 
