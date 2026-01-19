@@ -1,6 +1,6 @@
 # 🧠 MarketMind: Hybrid LLM System for Economic Sentiment Analysis
 
-![Banner Image](https://ibb.co/YTBbKnGx)
+![Banner Image]([https://ibb.co/YTBbKnGx](https://i.ibb.co/VpY3hn8s/S-8830998.jpg))
 > **🏆 WINNER - 1ST PLACE AWARD (Prize: 10,000 THB)**
 > *High-Competency AI Workforce Development Project (PMU-B) x 42 Bangkok*
 
