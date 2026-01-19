@@ -5,13 +5,12 @@
 > *High-Competency AI Workforce Development Project (PMU-B) x 42 Bangkok*
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://4tuathb.streamlit.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/Framework-Streamlit-red)](https://streamlit.io/)
 
 ---
 
-## 📖 Executive Summary
+## Executive Summary
 
 **MarketMind** is an AI-powered financial intelligence platform developed to solve the "Information Overload" crisis faced by retail investors. By leveraging a **Multi-Model Consensus Architecture**, MarketMind utilizes three distinct Large Language Models (LLMs) to analyze real-time financial news, eliminate emotional bias, and provide actionable investment strategies (Buy/Hold/Sell) with explained reasoning.
 
@@ -19,50 +18,42 @@ This project was developed as a Capstone Project for **42 Bangkok - KMITL** and 
 
 ---
 
-## 🛑 The Problem
-
-* **Information Overload:** Investors are bombarded with thousands of news articles daily. It is impossible for humans to process this data in real-time.
-* **Emotional Bias:** Retail investors often make decisions based on fear (Panic Selling) or greed (FOMO), leading to suboptimal portfolio performance.
-* **Lack of Expertise:** Deep financial analysis requires understanding complex terminology which is often inaccessible to general investors.
-
----
-
-## 💡 The Solution: Multi-Model Consensus
+## The Solution : Multi-Model Consensus
 
 We moved beyond a single-AI approach. MarketMind implements an **Ensemble Learning** strategy, treating AI agents as a "Committee of Experts."
 
 ![Consensus Workflow](https://placehold.co/800x300/e0e0e0/333333?text=Workflow+Diagram:+News+%E2%86%92+3+LLMs+%E2%86%92+Consensus+%E2%86%92+Dashboard)
-### The "Committee" Members:
-1.  **Qwen-2.5 (The Financial Analyst):** Specialized in financial terminology and CFA-level concepts.
-2.  **Gemma-3 (The Logician):** Specialized in chain-of-thought reasoning and logic.
-3.  **Llama-3.1 (The Generalist):** Provides a broad market overview and context.
+### The "Committee" Members
+1.  **Qwen-2.5** Specialized in financial terminology and CFA-level concepts.
+2.  **Gemma-3** Specialized in chain-of-thought reasoning and logic.
+3.  **Llama-3.1** Provides a broad market overview and context.
 
-**The Result:** A final **Sentiment Score (0-10)** that is cross-verified, unbiased, and highly accurate.
+**The Result:** A final **Sentiment Analysis, Market Scoring, News Summary, Investment Suggestion** that is cross-verified, unbiased, and highly accurate.
 
 ---
 
-## ⚙️ System Architecture & Workflow
+## System Architecture & Workflow
 
 Our end-to-end pipeline consists of four main layers:
 
-1.  **Data Ingestion Layer:**
+1.  **Data Ingestion Layer :**
     * Real-time Web Scraping from major financial news outlets.
     * Incremental updates to ensure fresh data.
-2.  **Data Processing Layer:**
+2.  **Data Processing Layer :**
     * **Cleaning:** Regex-based removal of HTML tags and noise.
     * **Indexing:** TF-IDF and Cosine Similarity to detect and remove duplicate news.
     * **Filtering:** Sector classification to route news to the correct analysis pipeline.
-3.  **AI Analysis Layer (The Core):**
+3.  **AI Analysis Layer (The Core) :**
     * Parallel processing by Qwen, Gemma, and Llama.
     * Generation of JSON-structured outputs (Sentiment, Rationale, Action).
     * Weighted Consensus Calculation.
-4.  **Visualization Layer:**
+4.  **Visualization Layer :**
     * Interactive Streamlit Dashboard.
     * Plotly-based visualizations (Treemaps, Gauge Charts).
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 ### 1. Market Heatmap Dashboard
 Visualize the entire market at a glance. Green indicates bullish sentiment; Red indicates bearish sentiment.
@@ -93,7 +84,7 @@ A transparent view of how each model performs against standard financial benchma
 
 ---
 
-## 📊 Performance Benchmarks
+## Performance Benchmarks
 
 To ensure reliability, we benchmarked our selected models against industry standards:
 
@@ -107,7 +98,7 @@ To ensure reliability, we benchmarked our selected models against industry stand
 
 ---
 
-## 🔮 Future Roadmap
+## Future Roadmap
 
 * **Data Expansion:** Integrate local Thai Stock Market (SET) and ASEAN regional news.
 * **Subscription Model:** Tiered access (Free vs. Premium) to unlock advanced Multi-Model Consensus features.
@@ -116,7 +107,7 @@ To ensure reliability, we benchmarked our selected models against industry stand
 
 ---
 
-## 👥 The Team: 4TUATHB Industries
+## The Team: 4TUATHB Industries
 
 **Advisor:** Dr. Jirayu Petchhan
 
@@ -127,7 +118,7 @@ To ensure reliability, we benchmarked our selected models against industry stand
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 We would like to extend our gratitude to:
 * **PMU-B (Program Management Unit for Human Resources & Institutional Development, Research and Innovation)** for the support and the award.
